@@ -46,10 +46,17 @@ var looper = function(family){
 
 var letters = ['A', 'B', 'C', 'D', 'E'];
 //Write a function called reversedLooper that is given letters as 
-//it's only argument and loops through the given array backwards alerting every item in the array starting at the end.
+//it's only argument and loops through the given array backwards
+// alerting every item in the array starting at the end.
 
   //Code Here
-
+var reversedLooper = function(letters){
+  for (var i = letters.length - 1; i > 0; i--){
+    alert(letters[i]);
+  }
+}
+//----------------------------------
+//once again did not work with js bin
 
 //Next Problem
 
@@ -59,7 +66,15 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 //only argument and removes all values that aren't even from the given array.
 
   //Code Here
-
+var evenFinder = function(nums){
+  for (var i = nums.length - 1; i > 0; i--){
+    if (nums[i] % 2 !== 0){
+      nums.splice(i, 1);
+    }
+  }
+  return nums;
+}
+//find a way to loop through from beginning to end and still get the same result
 
 //Next problem
 
