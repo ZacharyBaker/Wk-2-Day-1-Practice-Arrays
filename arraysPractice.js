@@ -149,10 +149,20 @@ var finder = function(numbers){
 
 
 var str = 'this is my sentence';
-//Write a function called reverse that takes a given str as it's only argument and returns that string after it's been reversed
+//Write a function called reverse that takes a 
+//given str as it's only argument and returns that
+// string after it's been reversed
 
   //Code Here
-
+var reverse = function(str){
+  var strArr = str.split('');
+  var newStrArr = [];
+  for (var i = 0; i < strArr.length; i++){
+    newStrArr.unshift(strArr[i]);
+  }
+  str = newStrArr.join('');
+  return str;
+}
 
 //Next Problem
 
