@@ -32,8 +32,14 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 //argument, loops through the given array, and alerts every item in the array.
 
   //Code Here
-
-
+var looper = function(family){
+  for (var i = 0; i < family.length; i++){
+    alert(family[i]);
+  }
+}
+//----------------------------------------
+//interesting to note that this did not work with JS bin, but worked just fine on the console.
+//------------------------------------------
 //Next problem
 
 
