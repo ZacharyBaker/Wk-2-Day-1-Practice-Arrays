@@ -382,6 +382,7 @@ of Data is to have an Array full of objects. */
 //Create an empty array called users.
 
   //Code Here
+  var users = [];
 
 /*Now add three user objects to your users array. Each user object should contain the
 following properties. name, email, password, username.*/
@@ -395,6 +396,21 @@ var user1 = {
 };
 
 //Your Code Here
+var user2 = {
+    name: 'Jeff Man',
+    email: 'lalalala@gmail.com',
+    password: 'iLoveJavaPizza',
+    username: 'dkafeifdkf'
+};
+var user3 = {
+    name: 'tom hat',
+    email: 'tman@gmail.com',
+    password: 'iLovedoingstuff',
+    username: 'pizzaman'
+};
+users.push(user1, user2, user3);
+
+
 
 /*Now you have a very common data structure. Twitter is a good use case.
 It's easy to imagine that your followers list on Twitter is an Array full or objects
@@ -405,6 +421,20 @@ objects until you find Tyler's account (use tylermcginnis33@gmail.com to find hi
 Once you find the particular index he's located in, delete him from the array.*/
 
   //Code Here
+for (var obj in users){
+  if (users[obj].email === "tylermcginnis33@gmail.com"){
+    delete users[obj];
+  }
+}
+//-----------------
+
+for (var i in users){
+  if (users[i].email === "tylermcginnis33@gmail.com"){
+      
+    delete users[i];
+  }
+ 
+}
 
 //The activity we just did is very much how data works in 'the real world'.
 
